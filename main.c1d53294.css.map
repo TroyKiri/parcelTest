@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.styl"],"names":[],"mappings":"AAAA,MACE,sBAAyB,CACzB,iBACF,CACA,cACE,SACF,CACA,EACE,oBAAqB,CACrB,UACF","file":"main.c1d53294.css","sourceRoot":"..","sourcesContent":[".main {\n  background-color: #008000;\n  text-align: center;\n}\n.main__header {\n  color: #f00;\n}\na {\n  text-decoration: none;\n  color: #00f;\n}\n"]}
