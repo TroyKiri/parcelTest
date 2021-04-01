@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && parcel build index.html",
+    "build": "rimraf dist && parcel build index.html --public-url /parcelTest/ --no-content-hash",
     "dev": "rimraf dist && parcel index.html --open",
     "deploy": "gh-pages -d dist"
   },
@@ -21,7 +21,30 @@
   "devDependencies": {
     "cssnano": "^4.1.10",
     "gh-pages": "^2.2.0",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-custom-dist-structure": "^1.1.17",
     "rimraf": "^3.0.2",
     "stylus": "^0.54.8"
+  },
+  "customDistStructure": {
+    "config": {
+      ".js": "js",
+      "images": [
+        ".jpg",
+        ".png"
+      ],
+      "styles": [
+        ".css",
+        ".map"
+      ],
+      ".fileExtension": "folder/in/dist",
+      "folder/in/dist": [
+        ".file",
+        ".extensions"
+      ]
+    },
+    "options": {
+      "development": true
+    }
   }
 }
