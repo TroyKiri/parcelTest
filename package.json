@@ -1,0 +1,27 @@
+{
+  "name": "parceltest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && parcel build index.html",
+    "dev": "rimraf dist && parcel index.html --open",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TroyKiri/parcelTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TroyKiri/parcelTest/issues"
+  },
+  "homepage": "https://github.com/TroyKiri/parcelTest",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gh-pages": "^2.2.0",
+    "rimraf": "^3.0.2",
+    "stylus": "^0.54.8"
+  }
+}
